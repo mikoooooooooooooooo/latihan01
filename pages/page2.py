@@ -3,13 +3,13 @@ import plotly.express as px
 import numpy as np
 import matplotlib.pyplot as plt
 
-st.title("Sata Visualization")
+st.title("Data Visualization")
 
 #Generate some data
 x=np.linspace(0,10,100)
 y=np.sin(x)
 #Plot data
 fig, ax=plt.subplots()
-ax.plot(X,y)
+ax.plot(x,y)
 #Display the plot
 st.pyplot(fig)

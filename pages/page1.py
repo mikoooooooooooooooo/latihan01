@@ -1,4 +1,4 @@
 import streamlit as st
 
-st.title("welkam to mikohampek")
+st.title("Welcome to Mico'z Home Page")
 st.write("Ini demo aplikasi streamlit.")
