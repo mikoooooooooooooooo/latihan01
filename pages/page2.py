@@ -85,4 +85,4 @@ st.radio(
     on_change=apply_settings
 )
 
-st.info("Tip: Setelah mengubah pengaturan, pindah ke page1 untuk melihat hasilnya.")
+st.info("Tip: Setelah mengubah pengaturan, pindah ke halaman Inflasi Dunia untuk melihat hasilnya.")
