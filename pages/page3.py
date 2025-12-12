@@ -39,7 +39,7 @@ with col2:
 
 with col3:
     st.write("**Kelas:**")
-    st.write("Prakbigdata")
+    st.write("Praktikum Analisa Big Data Ekonomika")
 
 st.markdown("---")
 
