@@ -2,7 +2,7 @@ import streamlit as st
 
 PLOTLY_TEMPLATES = ["plotly", "plotly_dark", "ggplot2", "seaborn", "simple_white", "presentation"]
 
-st.title("🫂 Pengaturan")
+st.title("⚙️ Pengaturan")
 st.caption("Pengaturan tersimpan (persisten) dan berlaku untuk semua halaman.")
 
 # ======================
