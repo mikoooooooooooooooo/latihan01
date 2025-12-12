@@ -87,7 +87,6 @@ def load_data():
 
     return long_df
 
-# ✅ data harus dibuat sebelum dipakai
 data = load_data()
 
 # ==========================================================
@@ -150,13 +149,6 @@ st.slider(
     on_change=apply_filter_change,
 )
 
-# Tombol reset (setelah filter)
-if st.button("🔄 Reset Filter"):
-    st.session_state["ui_countries"] = default_countries
-    st.session_state["ui_year_range"] = default_year_range
-    apply_filter_change()
-    st.rerun()
-
 selected_countries = st.session_state["ui_countries"]
 year_range = st.session_state["ui_year_range"]
 
@@ -166,7 +158,7 @@ df_filtered = data[
 ].sort_values(["Country Name", "Year"])
 
 # ==========================================================
-# KPI SUMMARY
+# SUMMARY
 # ==========================================================
 st.subheader("📌 Ringkasan Singkat")
 cols = st.columns(len(selected_countries))

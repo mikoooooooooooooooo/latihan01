@@ -34,7 +34,7 @@ def apply_settings():
 
 # ======================
 # SET DEFAULT UI STATE (HANYA JIKA BELUM ADA)
-# Ini kunci supaya widget tidak reset
+# Ini agar widget tidak reset
 # ======================
 st.session_state.setdefault("ui_app_theme", st.session_state.get("app_theme", "Light"))
 st.session_state.setdefault("ui_line_template", st.session_state.get("line_template", "plotly"))

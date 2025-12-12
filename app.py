@@ -31,7 +31,7 @@ def save_settings():
         json.dump(payload, f, indent=2)
 
 # ======================
-# INIT SETTINGS (ONCE)
+# INIT SETTINGS
 # ======================
 def init_settings():
     defaults = {
@@ -44,7 +44,6 @@ def init_settings():
     "filter_year_range": None,
 }
 
-    # Hanya init sekali per session browser
     if st.session_state.get("_settings_inited", False):
         return
         
@@ -60,7 +59,7 @@ def init_settings():
 def apply_app_theme_css():
     theme = st.session_state.get("app_theme", "Dark Blue")
 
-    # NORMALISASI (jaga-jaga nilai lama)
+    # NORMALISASI
     if theme not in ("Dark Blue", "Dark Green"):
         theme = "Dark Blue"
         st.session_state["app_theme"] = "Dark Blue"
@@ -78,7 +77,7 @@ def apply_app_theme_css():
     # ======================
     # DARK GREEN
     # ======================
-    else:  # pasti Dark Green
+    else:  
         bg = "#0f1f17"
         fg = "#e6f4ea"
         card = "#152d22"
